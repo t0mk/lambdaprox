@@ -14,6 +14,8 @@ curl https://your-function-url.com?url=https://example.com
 
 Only GCP works now.
 
+If you deploy this to all regions, considering free tiers and round-roubin usage, it's a super-cheap datacenter proxy service, as long as you only fetch single urls. In other words, this won't work as a proxy for all HTTPS(TLS) connections in a browser.
+
 ## Features
 
 - **Proxy Service**: Fetch data from an external URL via a serverless function.
