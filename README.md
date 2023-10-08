@@ -2,7 +2,15 @@
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/t0mk/lambdaprox)](https://goreportcard.com/report/github.com/t0mk/lambdaprox)
 
-**LambdaProx** is a minimalistic serverless proxy service designed to work with various cloud providers such as Google Cloud Functions, AWS Lambda, and Azure Functions. It allows you to fetch data from an external URL by making a GET request to it. This service can be accessed with a simple `curl` command, making it a lightweight and cost-effective solution to utilize multiple source IPs across different cloud regions.
+**LambdaProx** is a minimalistic serverless proxy service designed to work with various cloud providers such as Google Cloud Functions, AWS Lambda, and Azure Functions. It allows you to fetch data from an external URL by making a GET request to it. The goal is to make lightweight and cost-effective solution to utilize multiple source IPs across different cloud regions.
+
+It's a http service which will fetch URL that you pass in `url` GET param, like 
+
+```bash
+curl https://your-function-url.com?url=https://example.com
+```
+
+(don't forget to url encode the url...)
 
 Only GCP works now.
 
