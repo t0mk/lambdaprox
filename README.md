@@ -14,7 +14,10 @@ curl https://your-function-url.com?url=https://example.com
 
 Only GCP works now.
 
-If you deploy this to all regions, considering free tiers and round-roubin usage, it's a super-cheap datacenter proxy service, as long as you only fetch single urls. In other words, this won't work as a proxy for all HTTPS(TLS) connections in a browser.
+If you deploy this to all regions, considering free tiers, inter-cloud round-roubin usage, it might be a cheap datacenter proxy service. The cost-effectiveness depends on your use case (how often you call, how much you download). Consult pricing of the functions service:
+- https://cloud.google.com/functions/pricing
+
+This approach works long as you only fetch single urls. In other words, it won't work as a proxy for all HTTPS(TLS) connections in a browser.
 
 ## Features
 
